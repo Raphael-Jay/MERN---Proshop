@@ -15,3 +15,7 @@ Import bootstrap to main.js
 
 Add react bootstrap
 `npm install react-bootstrap`
+
+serving products BACKEND routes
+`http://localhost:5000/api/products/2`
+git commit -m 'serving products - backend routes'
