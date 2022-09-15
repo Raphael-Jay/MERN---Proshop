@@ -1,7 +1,19 @@
-export const App = () => {
+import { Container } from 'react-bootstrap'
+
+import Footer from './components/Footer'
+import Header from './components/Header'
+
+// function App() {
+const App = () => {
   return (
     <>
-      <h1>Welcome to Proshop</h1>
+      <Header />
+      <main className='py-3'>
+        <Container>
+          <h1>Welcome to Proshop</h1>
+        </Container>
+      </main>
+      <Footer />
     </>
   )
 }
