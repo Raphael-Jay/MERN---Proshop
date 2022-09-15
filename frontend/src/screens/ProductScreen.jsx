@@ -13,12 +13,11 @@ const ProductScreen = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       const { data } = await axios.get(`/api/products/${id}`)
-
       setProduct(data)
     }
 
     fetchProduct()
-  }, [])
+  }, [id])
 
   return (
     <>
@@ -46,7 +45,7 @@ const ProductScreen = () => {
         </Col>
         <Col md={3}>
           <Card>
-            <ListGroup vaiant='flush'>
+            <ListGroup variant='flush'>
               <ListGroup.Item>
                 <Row>
                   <Col>Price:</Col>
@@ -56,7 +55,7 @@ const ProductScreen = () => {
                 </Row>
               </ListGroup.Item>
             </ListGroup>
-            <ListGroup vaiant='flush'>
+            <ListGroup variant='flush'>
               <ListGroup.Item>
                 <Row>
                   <Col>Status:</Col>
