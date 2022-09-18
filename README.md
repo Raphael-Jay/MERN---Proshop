@@ -78,3 +78,8 @@ const location = useLocation()
 Postman - User and Auth
 
 Add JWT_SECRET in .env file
+
+Postman - GET /api/users/profile
+
+- copy token from POST api/users/login
+- Add to Authorization > token - paste token
