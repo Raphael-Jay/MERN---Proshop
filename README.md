@@ -70,3 +70,7 @@ router.get(
   asyncHandler(async (req, res) => {
     const product = await Product.findById(req.params._id)
 ```
+
+import { useParams, useLocation } from 'react-router-dom'
+
+const location = useLocation()

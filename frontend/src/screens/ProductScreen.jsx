@@ -12,14 +12,13 @@ const ProductScreen = () => {
   const { id } = useParams()
   const navigate = useNavigate()
 
-  const [qty, setQty] = useState(0)
-  // console.log(history)
+  const [qty, setQty] = useState(1)
 
   const dispatch = useDispatch()
 
   const productDetails = useSelector((state) => state.productDetails)
   const { loading, error, product } = productDetails
-  console.log(product)
+  // console.log(product)
   useEffect(() => {
     dispatch(listProductDetails(id))
   }, [dispatch, id])
