@@ -22,3 +22,12 @@ git commit -m 'serving products - backend routes'
 
 Import Data
 `npm run data:import`
+
+## Fix: error from errorhandler Cast to ObjectId failed for value to \_id instead of id
+
+```
+router.get(
+  '/:id',
+  asyncHandler(async (req, res) => {
+    const product = await Product.findById(req.params._id)
+```
