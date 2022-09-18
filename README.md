@@ -31,3 +31,42 @@ router.get(
   asyncHandler(async (req, res) => {
     const product = await Product.findById(req.params._id)
 ```
+
+Redux
+install redux devtool
+$npm i redux react-redux redux-thunk redux-devtools-extension
+store.js
+
+- redux
+  - createStore
+  - combineReducers
+  - applyMiddleware
+- redux-thunk
+  - thunk
+- redux-devtools-extension
+  - composeWithDevTools
+
+Redux Flow
+Start with the constants
+Create a reducer
+Add the reducer to the Store
+Create Action
+Go to the UI implement
+import useDispatch,useSelector
+useDispatch
+import Actions
+dispatch an Action
+useSelector to get the state
+useSelector state thru reducer from the store
+destructure the state from useSelector
+
+## Fix error - need to be \_id
+
+```
+productRoutes.js
+
+router.get(
+  '/:_id',
+  asyncHandler(async (req, res) => {
+    const product = await Product.findById(req.params._id)
+```
