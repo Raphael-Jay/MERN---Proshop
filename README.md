@@ -76,3 +76,5 @@ import { useParams, useLocation } from 'react-router-dom'
 const location = useLocation()
 
 Postman - User and Auth
+
+Add JWT_SECRET in .env file
