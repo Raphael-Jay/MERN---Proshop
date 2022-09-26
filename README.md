@@ -1,5 +1,16 @@
 # MERN Proshop
 
+create .env file
+Note: remove quotes
+
+```
+ NODE_ENV = "if development or production"
+ PORT = "port here"
+ MONGO_URI = mongodb+srv://<username>:<password>@cluster0.ssawl.mongodb.net/<dbname>?retryWrites=true&w=majority
+ JWT_SECRET = abc123 (example)
+ PAYPAL_CLIENT_ID = "paste here"
+```
+
 - add meta description
 - add title
 - add font awesome CDN
